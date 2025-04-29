@@ -1,3 +1,4 @@
+// Implementation of a hash table with chaining for collision resolution
 public class MyHashTable<K, V> {
     private class HashNode<K, V> {
         private K key;
@@ -42,7 +43,7 @@ public class MyHashTable<K, V> {
 
         if (node == null) {
             chainArray[index] = new HashNode<>(key, value);
-            size++; // Увеличиваем size только при добавлении нового узла
+            size++;
         } else {
             HashNode<K, V> prev = null;
             while (node != null && !node.key.equals(key)) {
@@ -50,10 +51,10 @@ public class MyHashTable<K, V> {
                 node = node.next;
             }
             if (node != null && node.key.equals(key)) {
-                node.value = value; // Обновляем значение, size не меняем
+                node.value = value;
             } else {
                 prev.next = new HashNode<>(key, value);
-                size++; // Увеличиваем size только при добавлении нового узла
+                size++;
             }
         }
     }
