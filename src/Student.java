@@ -1,3 +1,4 @@
+// Simple Student class for hash table values
 public class Student {
     private String name;
 

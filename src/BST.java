@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 public class BST<K extends Comparable<K>, V> {
@@ -12,7 +13,7 @@ public class BST<K extends Comparable<K>, V> {
         }
     }
 
-    // Делаем Entry обобщённым классом с собственными параметрами типов
+
     public static class Entry<K1, V1> {
         private K1 key;
         private V1 value;
