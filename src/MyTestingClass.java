@@ -1,3 +1,4 @@
+// Class for testing hash table keys
 public class MyTestingClass {
     private int id;
 
