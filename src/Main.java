@@ -13,6 +13,7 @@ public class Main {
         }
 
         System.out.println("Bucket sizes in MyHashTable:");
+        System.out.println();
         int[] bucketSizes = table.getBucketSizes();
         for (int i = 0; i < bucketSizes.length; i++) {
             System.out.println("Bucket " + i + ": " + bucketSizes[i] + " elements");
